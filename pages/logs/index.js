@@ -1,33 +1,13 @@
-// pages/index/index.js
+// pages/logs/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:'我爱颖宝1',
-    img:'../../static/mylove.jpg',
-    userInfo:{}
+
   },
-  // 点击事件的回调
-  handleFn(){
-    wx.getUserProfile({
-      desc: '获取用户信息',
-      success:(res)=>{
-        const userInfo = res.userInfo;
-        // this.setState   react 小程序数据修改
-        // this.setData    小程序数据修改
-        this.setData({
-          userInfo,
-        })
-        console.log('获取用户信息',res.userInfo)
-      }
-    })
-    // console.log('子元素 事件触发了')
-  },
-  layoutFn(){
-    console.log('父元素 触发')
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

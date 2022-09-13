@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class="layout" bindtap="layoutFn">
+<!-- <view class="layout" catchtap="layoutFn"> -->
+  <image class="img" src="{{img}}"></image>
+  <text class="name">{{name}}</text>
+  <text class="welcome">欢迎来到小程序</text>
+  <!-- bindtap 类似 onClick -->
+  <button bindtap="handleFn">获取用户信息</button>
+  <!-- <button catchtap="handleFn">获取用户信息</button> -->
+</view>
