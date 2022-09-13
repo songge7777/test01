@@ -28,39 +28,60 @@ Page({
   layoutFn(){
     console.log('父元素 触发')
   },
+  // 跳转 路由
+  toLogs(){
+    // 获取用户信息 才能去跳转
+    // 打印 userInfo 数据
+    // console.log(this.data.userInfo.nickName)
+    const nickName = this.data.userInfo.nickName
+    // if(nickName){
+      // 正常跳转路由 可以返回 但是存在10路由 历史记录
+      wx.navigateTo({
+        url: '/pages/logs/index?data=123',
+      })
+
+      // wx.reLaunch({
+      //   url: '/pages/logs/index',
+      // })
+
+      // wx.redirectTo({
+      //   url: '/pages/logs/index',
+      // })
+    // }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log('Index onLoad')
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
-
+    console.log('Index onReady')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    console.log('Index onShow')
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide() {
-
+    console.log('Index onHide')
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    console.log('Index onUnload')
   },
 
   /**

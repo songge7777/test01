@@ -1,6 +1,16 @@
 <view class="layout" bindtap="layoutFn">
-  <image class="img" src="{{userInfo.avatarUrl ? userInfo.avatarUrl : img}}"></image>
-  <text class="name">{{userInfo.nickName ? userInfo.nickName : name}}</text>
-  <button wx:if="{{!userInfo.nickName}}" bindtap="handleFn">获取用户信息</button>
-  <text wx:else class="welcome">欢迎来到小程序</text>
+  <image
+    class="img" 
+    src="{{userInfo.avatarUrl ? userInfo.avatarUrl : img}}"
+    >
+  </image>
+  <text class="name" bindtap="toLogs">
+    {{userInfo.nickName ? userInfo.nickName : name}}
+  </text>
+  <button wx:if="{{!userInfo.nickName}}" bindtap="handleFn">
+    获取用户信息
+  </button>
+  <text wx:else class="welcome">
+    欢迎来到小程序
+  </text>
 </view>

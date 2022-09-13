@@ -1,2 +1,2 @@
 <!--pages/logs/index.wxml-->
-<text>pages/logs/index.wxml</text>
+<button bindtap="goBack"> 点我返回上一页</button>
